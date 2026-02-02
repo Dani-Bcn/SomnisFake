@@ -15,16 +15,8 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="w-1/2 h-20 flex items-center text-sm justify-end text-amber-200 gap-4 z-50 montserrat-regular">
-      {menuItems.map((item) => (
-        <h3
-          key={item.path}
-          className="cursor-pointer hover:text-blue-500 transition"
-          onClick={() => navigate(item.path)}
-        >
-          {item.label}
-        </h3>
-      ))}
+    <div>
+      <h1>Viscoelástica</h1>
     </div>
   );
 }

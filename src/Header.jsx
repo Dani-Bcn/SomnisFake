@@ -2,29 +2,9 @@ import { motion as m } from "framer-motion";
 import LogoSvg from "./componentsSvg.jsx/LogoSVG";
 import Stars3D from "./components3d/Stars3D";
 import Navbar from "./Navbar";
-import { Routes, Route } from "react-router-dom";
-import Viscoelastica from "./pages/Viscoelatica";
-/*import Matalassos from "./pages/Matalassos";
-import Top5 from "./pages/Top5";
-
-import Molles from "./pages/Molles";
-import Ensacades from "./pages/Ensacades";
-import Normablock from "./pages/Normablock";
-import Articulables from "./pages/Articulables";
-import Juvenil from "./pages/Juvenil";
-import Bultex from "./pages/Bultex"; */
 
 export default function Header() {
-  <Routes>
-    {/*     <Route path="/top5" element={<Top5 />} /> */}
-    <Route path="/viscoelastica" element={<Viscoelastica />} />
-    {/*  <Route path="/molles" element={<Molles />} />
-    <Route path="/ensacades" element={<Ensacades />} />
-    <Route path="/normablock" element={<Normablock />} />
-    <Route path="/articulables" element={<Articulables />} />
-    <Route path="/juvenil" element={<Juvenil />} />
-    <Route path="/bultex" element={<Bultex />} /> */}
-  </Routes>;
+ 
 
   return (
     <m.div
