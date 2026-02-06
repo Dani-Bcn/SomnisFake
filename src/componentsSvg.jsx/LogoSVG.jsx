@@ -1,8 +1,7 @@
-import { useState,  } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const LogoSvg = ({ scale = 1 }) => {
-
   const navigate = useNavigate();
   const [changeColor, setChangeColor] = useState("#FFD500");
   const [changeColor2, setChangeColor2] = useState("#EF4444");
@@ -19,10 +18,10 @@ const LogoSvg = ({ scale = 1 }) => {
 
   return (
     <div
-    onClick={()=>navigate("/")}
+      onClick={() => navigate("/")}
       onMouseOut={() => handleColorChange2()}
       onMouseOver={() => handleColorChange()}
-      className="logo w-100 mt-25 transition-all   z-500 cursor-pointer "
+      className="logo w-55 lg:w-100 lg:mt-25  transition-all   z-500 cursor-pointer "
     >
       <svg
         className="cursor-pointer"

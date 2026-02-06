@@ -1,15 +1,10 @@
-import React from "react";
 import "./App.css";
 import LogoPikolinSvg from "./componentsSvg.jsx/LogoPikolinSvg";
-import gsap from "gsap";
-import { useEffect, useState } from "react";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import BultexLogoSvg from "./componentsSvg.jsx/BultexLogoSvg";
 import { motion as m } from "framer-motion";
-import Header from "./Header";
 export default function Home() {
   return (
-    <main className="w-screen h-full  flex-1  flex flex-col items-center  ">
+    <main className="w-full   text-2xl bg-red-200 z-250 ">
       <video
         src="https://videos.pexels.com/video-files/4057148/4057148-uhd_2732_1440_25fps.mp4"
         autoPlay
@@ -30,19 +25,15 @@ export default function Home() {
           duration: 1,
           ease: "circOut",
         }}
-        className="w-screen box  h-screen mt-20   flex  items-center justify-center gap-32 z-10 "
+        className="w-full  mt-50  flex flex-col items-center justify-center gap-10 text-center text-white z-10 absolute top-0 left-0  px-4"
       >
-        <div className="h-62 w-150  flex mt-10 flex-col justify-start items-start">
-          <h2 className="w-full  text-5xl text-[rgb(207,207,157)]">
-            Volem que dormis millor cada dia amb marques de confiança com
-          </h2>
+        <div className="w-full ">
+          <h2>Volem que dormis millor cada dia amb marques de confiança com</h2>
           <LogoPikolinSvg />
         </div>
-        <div className="w-68 h-50  flex flex-wrap justify-start items-start ">
-          <h3 className="bebas-neue-regular text-5xl text-[rgb(207,207,157)]">
-            DORM A CASA TEVA
-          </h3>
-          <h3 className="bebas-neue-regular text-7xl text-[rgb(207,207,157)]">
+        <div>
+          <h3>DORM A CASA TEVA</h3>
+          <h3 className="bebas-neue-regular ">
             COM EN UN <span>HOTEL</span>
           </h3>
         </div>

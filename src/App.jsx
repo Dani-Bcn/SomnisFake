@@ -1,10 +1,6 @@
-import "./App.css";
-import LogoPikolinSvg from "./componentsSvg.jsx/LogoPikolinSvg";
-import gsap from "gsap";
+import "./App.css";import gsap from "gsap";
 import { useEffect, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import BultexLogoSvg from "./componentsSvg.jsx/BultexLogoSvg";
-import { motion as m } from "framer-motion";
 import Header from "./Header";
 import Footer from "./Footer";
 import Viscoelastica from "./pages/Viscoelatica";
@@ -54,7 +50,7 @@ function App() {
   }, []);
 
   return (
-    <main className="w-screen h-full  flex-1  flex flex-col items-center  ">
+    <main className="w-screen  h-full   flex flex-col  items-center  ">
       <Header />
    
       <Routes location={location} key={location.pathname}>

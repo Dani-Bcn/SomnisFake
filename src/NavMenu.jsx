@@ -33,12 +33,10 @@ export default function NavMenu() {
   }, [open]);
 
   return (
-    <>
-      {/* Header */}
-      <header className=" w-10 flex items-center justify-between  p-2 bg-white shadow-md z-50">
-        
-
-        {/* Botón hamburguesa */}
+    <main className="lg:hidden z-500">
+   
+      <header className=" w-10 flex items-center justify-between p-2 bg-white shadow-md z-50">
+     
         <button
           onClick={() => setOpen(!open)}
           className="flex flex-col gap-1 z-50"
@@ -52,7 +50,7 @@ export default function NavMenu() {
       {/* Menú */}
       <nav
         ref={menuRef}
-        className="fixed top-0 right-0 w-full md:w-1/3 h-screen bg-gray-100 flex flex-col items-center justify-center gap-6 text-xl font-medium translate-x-full z-40"
+        className=" fixed top-0 right-0 w-full md:w-1/3 h-screen bg-gray-100 flex flex-col items-center justify-center gap-6 text-xl font-medium translate-x-full z-40"
       >
         {menuItems.map((item) => (
           <a
@@ -65,6 +63,6 @@ export default function NavMenu() {
           </a>
         ))}
       </nav>
-    </>
+    </main>
   );
 }

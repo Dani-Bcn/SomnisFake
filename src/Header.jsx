@@ -2,6 +2,7 @@ import { motion as m } from "framer-motion";
 import LogoSvg from "./componentsSvg.jsx/LogoSVG";
 import Stars3D from "./components3d/Stars3D";
 import Navbar from "./Navbar";
+import NavMenu from "./NavMenu";
 
 export default function Header() {
  
@@ -18,13 +19,14 @@ export default function Header() {
         duration: 1,
         ease: "circOut",
       }}
-      className="w-screen h-30  fixed z-500 flex items-center justify-around "
+      className="w-full h-30  fixed z-500 flex items-center justify-around "
     >
       <div className="absolute w-full  h-full backdrop-blur-xl bg-red-600/15  z-10"></div>
-      <LogoSvg />
+       <LogoSvg />
       <Stars3D />
       <Navbar />
-      {/*     <NavMenu /> */}
+      <NavMenu /> 
+    
     </m.div>
   );
 }

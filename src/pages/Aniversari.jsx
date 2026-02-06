@@ -1,15 +1,18 @@
 export default function Aniversari() {
   return (
-    <div className="w-screen  overflow-hidden bg-blue-200/95 z-250 ">
-      <h1 className="text-9xl text-center mt-50 bebas-neue-regular ">
+    <div className="hidden lg:block w-screen overflow-hidden bg-blue-200/95 z-250">
+      <h1 className="text-9xl text-center mt-50 bebas-neue-regular">
         75 Aniversari
       </h1>
-      <div className="flex p-10 gap-10  flex-col items-center justify-center">
-        <h3 className="font-bold text-4xl">MATALÀS D'HOTEL ED.LIMITADA</h3>
+
+      <div className="flex p-10 gap-10 flex-col items-center justify-center">
+        <h3 className="font-bold text-4xl">
+          MATALÀS D'HOTEL ED.LIMITADA
+        </h3>
 
         <div className="flex flex-row justify-center items-center gap-6">
           <img
-            className=" h-65 object-contain"
+            className="h-65 object-contain"
             src="/public/75-aniversari.avif"
             alt=""
           />
@@ -35,18 +38,21 @@ export default function Aniversari() {
           </p>
         </div>
       </div>
-      <div className=" w-screen flex flex-row bg-indigo-200/25 justify-start items-start">
-        <div className="flex flex-col p-10 w-1/2 ">
+
+      <div className="w-screen flex flex-row bg-indigo-200/25 justify-start items-start">
+        <div className="flex flex-col p-10 w-1/2">
           <h3 className="text-4xl font-bold">COMPOSICIÓ</h3>
+
           <p className="text-xl">
             1. Teixit Stretch de gran tacte i pes que li proporciona elasticitat
             i transpirabilitat.
           </p>
+
           <p>
             2. Progression Visco®: combinació de Supersoft, material cel·lular
             d'alta densitat i baixa fermesa que s'adapta al cos, i Viscofoam,
             viscoelàstica d'alta densitat amb efecte memòria que acull la
-            persona en funció de la pressió i la petjada atèrmica.{" "}
+            persona en funció de la pressió i la petjada atèrmica.
           </p>
 
           <p>
@@ -72,10 +78,11 @@ export default function Aniversari() {
 
           <p>
             T. Triple Barrera®: Protecció higiènica total i permanent. Barrera
-            que actua contra les principals causes d'al·lèrgies: àcars, bacteris
-            i fongs; durant la vida útil del matalàs.
+            que actua contra les principals causes d'al·lèrgies: àcars,
+            bacteris i fongs; durant la vida útil del matalàs.
           </p>
         </div>
+
         <img
           className="h-125 p-10"
           src="/public/75-aniversari_composicio.avif"

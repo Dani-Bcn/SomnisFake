@@ -38,7 +38,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-1/2 h-20 flex items-center text-sm justify-end text-amber-200 gap-4 z-50 montserrat-regular">
+    <div className="hidden lg:flex w-1/2 h-20 lg items-center text-sm justify-end text-amber-200 gap-4 z-50 montserrat-regular">
       {menuItems.map((item) =>
         item.label === "Top 5" ? (
           <div
@@ -65,7 +65,7 @@ export default function Navbar() {
                 {top5Items.map((subItem) => (
                   <div
                     key={subItem.path}
-                    className="px-4 py-2 cursor-pointer hover:bg-blue-500 hover:text-white transition "
+                    className="px-4 py-2 cursor-pointer hover:bg-red-900 hover:text-white transition "
                     onClick={() => navigate(subItem.path)}
                   >
                     {subItem.label}
