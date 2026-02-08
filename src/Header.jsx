@@ -19,7 +19,7 @@ export default function Header() {
         duration: 1,
         ease: "circOut",
       }}
-      className="w-full h-30  fixed z-500 flex items-center justify-around "
+      className="w-full h-30  fixed z-250 flex items-center justify-around "
     >
       <div className="absolute w-full  h-full backdrop-blur-xl bg-red-600/15  z-10"></div>
        <LogoSvg />

@@ -1,8 +1,8 @@
 
 export default function Footer() {
   return (
-    <div className="w-full  bg-gray-800 text-white py-4 text-center text-[8px] flex z-550 justify-center items-center">
-      <div className=" flex-col justify-center items-center">
+    <div className="w-full  bg-gray-800 text-white py-4  text-center text-[8px] lg:text-sm flex z-550 justify-around items-center">
+      <div className=" flex-col justify-center items-center ">
         <h3 className="text-blue-300">SANT SADURNÍ D'ANOIA</h3>
         <p>Assesora Mònica</p>
         <a target="_blanck" href="https://maps.app.goo.gl/ueCLphyjmdr5Mpe89">

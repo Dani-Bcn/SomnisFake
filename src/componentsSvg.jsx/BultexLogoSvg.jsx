@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 
 const BultexLogoSvg = ({ scale = 1 }) => {
 
@@ -18,10 +18,11 @@ const BultexLogoSvg = ({ scale = 1 }) => {
         fillRule: "evenodd",
         clipRule: "evenodd",
       }}
+      className=" z-500"
     >
       <g transform={`scale(${scale})`} transformOrigin="center"></g>
       <defs>
-        <style>
+  <style>
           {`
           .fil3 { fill: none; }
           .fil2 {
@@ -30,7 +31,7 @@ const BultexLogoSvg = ({ scale = 1 }) => {
             fill-opacity: 0.501961;
           }
         `}
-        </style>
+        </style> 
       </defs>
 
       <g id="Capa_x0020_1">

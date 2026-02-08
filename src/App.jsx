@@ -1,4 +1,5 @@
-import "./App.css";import gsap from "gsap";
+import "./App.css";
+import gsap from "gsap";
 import { useEffect, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Header from "./Header";
@@ -28,31 +29,31 @@ function App() {
       gsap.to(".box", {
         scrollTrigger: {
           trigger: ".box",
-          start: "top center",
+          start: "top top",
           end: "5000",
           scrub: 2,
         },
         y: -600,
       });
     });
-    window.scrollTo(0, 0);
-    mm.add("(min-width:900px)", () => {
+      window.scrollTo(0, 0);
+   
       gsap.to(".logoBultex", {
+        opacity: 100,
         scrollTrigger: {
           trigger: ".box",
-          start: "top top",
-          end: "6000",
+          start: "center center",
+          end: "600",
           scrub: 2,
         },
-        y: -2000,
-      });
-    });
+        y: -500,
+      
+    }); 
   }, []);
 
   return (
-    <main className="w-screen  h-full   flex flex-col  items-center  ">
+    <main className="w-screen box    flex flex-col  items-center  ">
       <Header />
-   
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/aniversari" element={<Aniversari />} />

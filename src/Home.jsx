@@ -4,16 +4,17 @@ import BultexLogoSvg from "./componentsSvg.jsx/BultexLogoSvg";
 import { motion as m } from "framer-motion";
 export default function Home() {
   return (
-    <main className="w-full   text-2xl bg-red-200 z-250 ">
+    <main className="w-full h-screen  text-2xl bg-red-200 z-150 ">
       <video
         src="https://videos.pexels.com/video-files/4057148/4057148-uhd_2732_1440_25fps.mp4"
         autoPlay
         muted
         loop
         playsInline
-        className=" brightness-25 block-background__video--fixed block-background__image"
+        className="fixed  brightness-25 block-background__video--fixed block-background__image"
         poster="https://images.pexels.com/videos/4057148/pexels-photo-4057148.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
       />
+      
       <m.div
         animate={{
           opacity: 1,
@@ -37,10 +38,12 @@ export default function Home() {
             COM EN UN <span>HOTEL</span>
           </h3>
         </div>
+        <div className="logoBultex mt-10 opacity-0 lg:mt-25">
+             <BultexLogoSvg /></div>
       </m.div>
-      <div className="logoBultex  z-10 flex items-start justify-center ">
-        <BultexLogoSvg />
-      </div>
+   
+   
+    
     </main>
   );
 }

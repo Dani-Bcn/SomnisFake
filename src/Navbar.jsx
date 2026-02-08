@@ -38,7 +38,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="hidden lg:flex w-1/2 h-20 lg items-center text-sm justify-end text-amber-200 gap-4 z-50 montserrat-regular">
+    <div className="hidden lg:flex w-1/2 h-20 lg items-center text-sm justify-end text-amber-200 gap-4 z-250 montserrat-regular">
       {menuItems.map((item) =>
         item.label === "Top 5" ? (
           <div

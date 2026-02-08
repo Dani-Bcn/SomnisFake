@@ -3,7 +3,7 @@ import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Colchon3d } from "./Colchon3d.jsx";
 export default function MainCanvas() {
   return (
-    <Canvas className="fixed top-0 left-0 w-full h-full z-0">
+    <Canvas className="fixed top-0 left-0 w-full h-full z-500 ">
       <PerspectiveCamera makeDefault position={[0, 0, 75]} fov={5} />
       <OrbitControls
         maxPolarAngle={25}
