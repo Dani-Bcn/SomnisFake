@@ -33,7 +33,7 @@ export default function NavMenu() {
   }, [open]);
 
   return (
-    <main className="lg:hidden z-50">
+    <main className="lg:hidden z-250">
    
       <header className=" w-10 flex items-center justify-between p-2 bg-white shadow-md z-50">
      
