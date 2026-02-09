@@ -3,7 +3,7 @@ import { Stars } from "@react-three/drei";
 
 const Stars3D = () => {
   return (
-    <div className="z-100 fixed lg:w-full h-30 top-0 left-0 opacity-50 ">
+    <div className="z-250 fixed lg:w-full h-30 top-0 left-0 opacity-50 ">
      <Canvas>
       <Stars
         radius={100} // tamaño del espacio
