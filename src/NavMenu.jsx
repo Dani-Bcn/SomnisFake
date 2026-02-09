@@ -55,7 +55,7 @@ export default function NavMenu() {
         {menuItems.map((item) => (
           <a
             key={item}
-            href="#"
+              href={`/${item.toLowerCase()}`}
             className="hover:text-blue-600 transition"
             onClick={() => setOpen(false)}
           >

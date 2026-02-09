@@ -24,19 +24,7 @@ function App() {
   let mm = gsap.matchMedia();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-    mm.add("(min-width:900px)", () => {
-      gsap.to(".box", {
-        scrollTrigger: {
-          trigger: ".box",
-          start: "top top",
-          end: "5000",
-          scrub: 2,
-        },
-        y: -600,
-      });
-    });
-      window.scrollTo(0, 0);
+ 
    
       gsap.to(".logoBultex", {
         opacity: 100,
@@ -52,7 +40,9 @@ function App() {
   }, []);
 
   return (
-    <main className="w-screen box    flex flex-col  items-center  ">
+    <main className="w-screen h-auto  
+     flex flex-col  items-center  ">
+     
       <Header />
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
@@ -68,6 +58,7 @@ function App() {
         <Route path="/africa" element={<Africa />} />
       </Routes>
       <Footer />
+    
     </main>
   );
 }

@@ -1,6 +1,6 @@
 export default function Aniversari() {
   return (
-    <div className="hidden lg:block w-screen overflow-hidden bg-blue-200/95 z-250">
+    <div className="hidden lg:block w-screen h-full overflow-hidden bg-blue-200/95 z-50">
       <h1 className="text-9xl text-center mt-50 bebas-neue-regular">
         75 Aniversari
       </h1>
