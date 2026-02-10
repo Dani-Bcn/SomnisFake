@@ -4,9 +4,8 @@ import { gsap } from "gsap";
 const menuItems = [
   "Aniversari",
   "Viscoelastica",
-  "Molles",
-  "Ensacades",
-  "Normablock",
+  "Molles-ensacades",
+  "Sleep",
   "Articulables",
   "Juvenil",
   "Bultex",
