@@ -6,6 +6,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [openMolles, setOpenMolles] = useState(false);
+  const [openNorma, setOpenNorma] = useState(false)
 
   return (
     <div className="hidden lg:flex w-1/2 h-20 items-center text-sm justify-end text-amber-200 gap-6 z-250 montserrat-regular">
@@ -20,7 +21,7 @@ export default function Navbar() {
         onMouseLeave={() => setOpen(false)}
       >
         <h3
-          onClick={() => navigate("/viscoelastica")}
+         
           className="cursor-pointer"
         >
           Viscoelástica
@@ -29,7 +30,7 @@ export default function Navbar() {
         <AnimatePresence>
           {open && (
             <motion.div
-              initial={{ opacity: 0, y: -8 }}
+              initial={{ opacity: 0, y: -6 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
@@ -52,45 +53,89 @@ export default function Navbar() {
           )}
         </AnimatePresence>
       </div>
-     {/* Molles ensacades */}
-<div
-  className="relative"
-  onMouseEnter={() => setOpenMolles(true)}
-  onMouseLeave={() => setOpenMolles(false)}
->
-  <h3
-    onClick={() => navigate("/molles-ensacades")}
-    className="cursor-pointer"
-  >
-    Molles ensacades
-  </h3>
-
-  <AnimatePresence>
-    {openMolles && (
-      <motion.div
-        initial={{ opacity: 0, y: -8 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -8 }}
-        transition={{ duration: 0.25, ease: "easeOut" }}
-        className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+      {/* Molles ensacades */}
+      <div
+        className="relative"
+        onMouseEnter={() => setOpenMolles(true)}
+        onMouseLeave={() => setOpenMolles(false)}
       >
-        <span
+        <h3
           onClick={() => navigate("/molles-ensacades")}
-          className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+          className="cursor-pointer"
         >
           Molles ensacades
-        </span>
+        </h3>
 
-        <span
-          onClick={() => navigate("/sleep")}
-          className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+        <AnimatePresence>
+          {openMolles && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+            >
+              <span
+                onClick={() => navigate("/molles-ensacades")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Molles ensacades
+              </span>
+
+              <span
+                onClick={() => navigate("/sleep")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Sleep
+              </span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+      <div
+        className="relative"
+        onMouseEnter={() => setOpenNorma(true)}
+        onMouseLeave={() => setOpenNorma(false)}
+      >
+        <h3
+        
+          className="cursor-pointer"
         >
-          Sleep
-        </span>
-      </motion.div>
-    )}
-  </AnimatePresence>
-</div>
+          Normablock
+        </h3>
+
+        <AnimatePresence>
+          {openNorma && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+            >
+              <span
+                onClick={() => navigate("/normablock")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Normablock
+              </span>
+
+              <span
+                onClick={() => navigate("/aniversari")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                75 Aniversari
+              </span>
+               <span
+                onClick={() => navigate("/arce")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Arce
+              </span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </div>
   );
 }

@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
   let mm = gsap.matchMedia();
@@ -56,9 +55,10 @@ export default function Home() {
         </div>
         <div>
           <h3>DORM A CASA TEVA</h3>
-          <h3 className="bebas-neue-regular ">
-            COM EN UN <span>HOTEL</span>
-          </h3>
+          <h3 className="bebas-neue-regular ">COM EN UN </h3>
+          <span className="text-blue-600 bebas-neue-regular text-9xl">
+            HOTEL
+          </span>
         </div>
         <div className="logoBultex mt-10 opacity-0 lg:mt-25">
           <BultexLogoSvg />
