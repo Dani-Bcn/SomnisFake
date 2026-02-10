@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 const menuItems = [
-  "Top 5",
+  "Aniversari",
   "Viscoelastica",
   "Molles",
   "Ensacades",

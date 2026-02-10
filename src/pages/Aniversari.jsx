@@ -1,7 +1,7 @@
 export default function Aniversari() {
   return (
-    <div className="hidden lg:block w-screen h-full overflow-hidden bg-blue-200/95 z-50">
-      <h1 className="text-9xl text-center mt-50 bebas-neue-regular">
+    <div className=" lg:block w-screen h-full overflow-hidden bg-blue-200/95 z-50">
+      <h1 className="text-8xl lg:text-9xl text-center mt-50 bebas-neue-regular">
         75 Aniversari
       </h1>
 
@@ -10,7 +10,7 @@ export default function Aniversari() {
           MATALÀS D'HOTEL ED.LIMITADA
         </h3>
 
-        <div className="flex flex-row justify-center items-center gap-6">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
           <img
             className="h-65 object-contain"
             src="/public/75-aniversari.avif"
@@ -39,8 +39,8 @@ export default function Aniversari() {
         </div>
       </div>
 
-      <div className="w-screen flex flex-row bg-indigo-200/25 justify-start items-start">
-        <div className="flex flex-col p-10 w-1/2">
+      <div className="w-screen flex flex-col lg:flex-row bg-indigo-200/25 justify-start items-start">
+        <div className="flex flex-col p-10 lg:w-1/2 lg:gap-0 gap-3">
           <h3 className="text-4xl font-bold">COMPOSICIÓ</h3>
 
           <p className="text-xl">
