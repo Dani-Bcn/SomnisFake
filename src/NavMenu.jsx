@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { useNavigate } from "react-router-dom";
 
 const menuItems = [
   "Aniversari",
@@ -14,6 +15,7 @@ const menuItems = [
 export default function NavMenu() {
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (open) {
@@ -52,14 +54,14 @@ export default function NavMenu() {
         className=" fixed top-0 right-0 w-full md:w-1/3 h-screen bg-gray-100 flex flex-col items-center justify-center gap-6 text-xl font-medium translate-x-full z-40"
       >
         {menuItems.map((item) => (
-          <a
+          <p
             key={item}
-              href={`/${item.toLowerCase()}`}
+           onClick={() => {navigate(`/${item.toLowerCase()}`), setOpen(false)}}
             className="hover:text-blue-600 transition"
-            onClick={() => setOpen(false)}
+          
           >
             {item}
-          </a>
+          </p>
         ))}
       </nav>
     </main>
