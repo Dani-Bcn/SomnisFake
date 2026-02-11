@@ -1,16 +1,16 @@
 export default function Aniversari() {
   return (
     <div className=" lg:block w-screen h-full overflow-hidden bg-blue-200/95 z-50">
-      <h1 className="text-8xl lg:text-9xl text-center mt-50 bebas-neue-regular">
+      <h1 className="text-8xl lg:text-9xl text-center lg:mt-50 mt-40 bebas-neue-regular">
         75 Aniversari
       </h1>
 
-      <div className="flex p-10 gap-10 flex-col items-center justify-center">
+      <div className="flex lg:p-10 px-5 lg:gap-10 flex-col items-center justify-center">
         <h3 className="font-bold text-4xl">
           MATALÀS D'HOTEL ED.LIMITADA
         </h3>
 
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-6">
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-6">
           <img
             className="h-65 object-contain"
             src="/public/75-aniversari.avif"
@@ -40,7 +40,7 @@ export default function Aniversari() {
       </div>
 
       <div className="w-screen flex flex-col lg:flex-row bg-indigo-200/25 justify-start items-start">
-        <div className="flex flex-col p-10 lg:w-1/2 lg:gap-0 gap-3">
+        <div className="flex flex-col lg:p-10 px-5 lg:w-1/2 ">
           <h3 className="text-4xl font-bold">COMPOSICIÓ</h3>
 
           <p className="text-xl">
@@ -84,7 +84,7 @@ export default function Aniversari() {
         </div>
 
         <img
-          className="h-125 p-10"
+          className="h-125 lg:p-10 p-5"
           src="/public/75-aniversari_composicio.avif"
           alt=""
         />

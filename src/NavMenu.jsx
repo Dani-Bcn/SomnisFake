@@ -7,7 +7,8 @@ const menuItems = [
   "Viscoelastica",
   "Molles-ensacades",
   "Sleep",
-  "Articulables",
+  "Normablock",
+  "Arce",
   "Juvenil",
   "Bultex",
 ];
