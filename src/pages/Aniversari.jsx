@@ -1,12 +1,12 @@
 export default function Aniversari() {
   return (
-    <div className=" lg:block w-screen h-full overflow-hidden bg-blue-200/95 z-50">
-      <h1 className="text-8xl lg:text-9xl text-center lg:mt-50 mt-40 bebas-neue-regular">
+    <div className=" lg:block w-screen h-full  overflow-hidden bg-blue-100/25 z-50">
+      <h1 className="text-7xl lg:text-9xl text-center lg:mt-50 mt-40 bebas-neue-regular">
         75 Aniversari
       </h1>
 
-      <div className="flex lg:p-10 px-5 lg:gap-10 flex-col items-center justify-center">
-        <h3 className="font-bold text-4xl">
+      <div className="flex lg:p-10 px-5 lg:gap-10  flex-col items-center justify-center">
+        <h3 className=" lg:text-4xl text-3xl bebas-neue-regular">
           MATALÀS D'HOTEL ED.LIMITADA
         </h3>
 
@@ -39,9 +39,9 @@ export default function Aniversari() {
         </div>
       </div>
 
-      <div className="w-screen flex flex-col lg:flex-row bg-indigo-200/25 justify-start items-start">
-        <div className="flex flex-col lg:p-10 px-5 lg:w-1/2 ">
-          <h3 className="text-4xl font-bold">COMPOSICIÓ</h3>
+      <div className="w-screen flex flex-col py-5  lg:flex-row bg-indigo-200/25 justify-start items-start">
+        <div className="flex flex-col lg:p-10 gap-5  px-5 lg:w-1/2 ">
+          <h3 className="text-6xl  bebas-neue-regular">COMPOSICIÓ</h3>
 
           <p className="text-xl">
             1. Teixit Stretch de gran tacte i pes que li proporciona elasticitat

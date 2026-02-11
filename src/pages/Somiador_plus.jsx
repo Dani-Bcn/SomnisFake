@@ -2,8 +2,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function SomiadorPlus() {
   return (
-    <div className="w-full lg:h-screen p-10 lg:p-0 flex flex-col items-center justify-center z-100 bg-red-600/15">
-      <div className=" lg:w-1/2 clear-start mt-30 lg:mt-40 h-auto flex flex-col items-start justify-start gap-4 text-indigo-800 montserrat-regular">
+    <div className="w-full lg:h-screen p-10 lg:p-0 flex flex-col items-center justify-center z-100 bg-indigo-200/25">
+      <div className=" lg:w-1/2 clear-start mt-30 lg:mt-40 h-auto flex flex-col items-start justify-start gap-4 text-gray-700 montserrat-regular">
         <h1 className="font-bold text-4xl lg:text-7xl">SOMIADOR PLUS</h1>
         <h2 className="font-bold text-2xl lg:text-3xl">
           El nucli Normablock s'identifica pel nombre de molles a la zona

@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <div className="hidden lg:flex w-1/2 h-20 items-center text-sm justify-end text-amber-200 gap-6 z-250 montserrat-regular">
-      <h3 onClick={() => navigate("/aniversari")} className="cursor-pointer">
+      <h3 onClick={() => navigate("/aniversari")} className="cursor-pointer hover:text-indigo-500 transition duration-500">
         75 Aniversari
       </h3>
 
@@ -22,7 +22,7 @@ export default function Navbar() {
       >
         <h3
          
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-indigo-500 transition duration-500"
         >
           Viscoelástica
         </h3>
@@ -61,7 +61,7 @@ export default function Navbar() {
       >
         <h3
           onClick={() => navigate("/molles-ensacades")}
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-indigo-500 transition duration-500"
         >
           Molles ensacades
         </h3>
@@ -99,7 +99,7 @@ export default function Navbar() {
       >
         <h3
         
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-indigo-500 transition duration-500"
         >
           Normablock
         </h3>
