@@ -24,7 +24,7 @@ function App() {
   gsap.registerPlugin(ScrollTrigger);
   let mm = gsap.matchMedia();
 
-  useEffect(() => {
+  /* useEffect(() => {
     gsap.to(".logoBultex", {
       opacity: 100,
       scrollTrigger: {
@@ -35,7 +35,7 @@ function App() {
       },
       y: -500,
     });
-  }, []);
+  }, []); */
 
   return (
     <main
