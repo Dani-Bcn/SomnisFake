@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function Viscoelatica() {
   return (
     <div className="w-full  p-5  lg:mt-20 lg:px-10 flex flex-col   z-100 bg-red-200/20 bebas-regular">
-      <div className="  clear-start mt-40 lg:mt-40 h-auto flex flex-col items-start justify-start gap-4  montserrat-regular">
+      <div className="  clear-start mt-35 lg:mt-40 h-auto flex flex-col items-start justify-start gap-4  montserrat-regular">
         <h2 className=" text-6xl lg:text-9xl bebas-neue-regular">VISCOELÀSTICA</h2>
         <h3 className=" text-4xl lg:text-6xl bebas-neue-regular"> ¿QUE ÉS LA VISCOELÀSTICA? </h3>
         <p>

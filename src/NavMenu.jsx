@@ -5,12 +5,9 @@ import { useNavigate } from "react-router-dom";
 const menuItems = [
   "Aniversari",
   "Viscoelastica",
-  "Molles-ensacades",
-  "Sleep",
-  "Normablock",
-  "Arce",
-  "Articulables",
-  "King",
+  "Molles-ensacades", 
+  "Normablock",  
+  "Articulables", 
   "Juvenil"
 ];
 

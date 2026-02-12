@@ -1,8 +1,8 @@
 export default function Normablock() {
   return (
-    <div className="p-10 flex flex-col gap-5">
-      <h2 className="mt-25 lg:mt-50 lg:text-9xl text-6xl bebas-neue-regular">Normablock</h2>
-      <h3 className="text-6xl bebas-neue-regular"> ¿QUÈ ÉS LA TECNOLOGIA NORMABLOCK® DE PIKOLIN?</h3>
+    <div className="px-10  ">
+      <h2 className="mt-40 lg:mt-50 lg:text-9xl text-6xl bebas-neue-regular">Normablock</h2>
+      <h3 className="lg:text-6xl text-4xl bebas-neue-regular"> ¿QUÈ ÉS LA TECNOLOGIA NORMABLOCK® DE PIKOLIN?</h3>
       <p>
          Sistema de molls de fil
         continu més avançat del mercat. És fruit d'anys de recerca i exclusiu de

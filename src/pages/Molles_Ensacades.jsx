@@ -44,7 +44,7 @@ export default function Molles() {
         alt=""
       />
 
-      <h2 className="mt-50 text-6xl lg:text-9xl bebas-neue-regular z-10" >
+      <h2 className="mt-35 lg:mt-50 text-6xl lg:text-9xl bebas-neue-regular z-10" >
         MOLLES ENSACADES
       </h2>
       <h3 className=" text-3xl lg:text-6xl bebas-neue-regular relative z-10">
