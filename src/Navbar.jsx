@@ -174,12 +174,7 @@ export default function Navbar() {
               >
                 Art20 Nova
               </span>
-              <span
-                onClick={() => navigate("/king")}
-                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
-              >
-                Sensium
-              </span>
+             
             </motion.div>
           )}
         </AnimatePresence>
@@ -207,25 +202,18 @@ export default function Navbar() {
               >
                 Juvenil
               </span>
-
               <span
-                onClick={() => navigate("/bultex_bit_art")}
+                onClick={() => navigate("/apple")}
                 className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
               >
-                Bultex Bit Art
+                Apple
               </span>
               <span
-                onClick={() => navigate("/art20_nova")}
+                onClick={() => navigate("/huracan")}
                 className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
               >
-                Art20 Nova
-              </span>
-              <span
-                onClick={() => navigate("/king")}
-                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
-              >
-                Sensium
-              </span>
+                Huracán
+              </span>             
             </motion.div>
           )}
         </AnimatePresence>

@@ -11,6 +11,7 @@ const menuItems = [
   "Arce",
   "Articulables",
   "King",
+  "Juvenil"
 ];
 
 export default function NavMenu() {

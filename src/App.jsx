@@ -18,6 +18,8 @@ import Arce from "./pages/Arce";
 import King from "./pages/King";
 import Bultex_Bit_Art from "./pages/Bultex_Bit_Art";
 import Art20_Nova from "./pages/Art20_Nova";
+import Apple from "./pages/Apple";
+import Huracan from "./pages/Huracan"
 
 import { Routes, Route, useLocation } from "react-router-dom";
 function App() {
@@ -59,6 +61,9 @@ function App() {
         <Route path="/articulables" element={<Articulables />} />
         <Route path="/bultex_bit_art" element={<Bultex_Bit_Art />} />
         <Route path="/art20_nova" element={<Art20_Nova />} />
+        <Route path="/apple" element={<Apple />} />
+        <Route path="/huracan" element={<Huracan />} />
+
       </Routes>
       <Footer />
     </main>
