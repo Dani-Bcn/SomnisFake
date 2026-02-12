@@ -19,7 +19,6 @@ import King from "./pages/King";
 import Bultex_Bit_Art from "./pages/Bultex_Bit_Art";
 
 
-import { Routes, Route } from "react-router-dom";
 import { Routes, Route, useLocation } from "react-router-dom";
 function App() {
   const location = useLocation()
