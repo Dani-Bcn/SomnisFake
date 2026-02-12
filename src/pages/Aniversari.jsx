@@ -13,7 +13,7 @@ export default function Aniversari() {
         <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-6">
           <img
             className="h-65 object-contain"
-            src="/public/75-aniversari.avif"
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=368,fit=crop,trim=422.1879815100154;18.48998459167951;640.9861325115562;21.571648690292758/YBgjMgabRgiQr27z/75-aniversari-mjE41gngEbfqL7aL.webp"
             alt=""
           />
           <p className="bebas-regular">
@@ -88,7 +88,7 @@ export default function Aniversari() {
 
         <img
           className="h-125 lg:p-10 py-10"
-          src="/public/75-aniversari_composicio.avif"
+          src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=737,fit=crop,trim=29.88399071925754;18.190255220417633;41.577726218097446;32.48259860788863/YBgjMgabRgiQr27z/75-aniversari_composicio-YNqMagzrgzIpeqEq.webp"
           alt=""
         />
       </div>
