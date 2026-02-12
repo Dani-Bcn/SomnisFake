@@ -20,8 +20,9 @@ import Bultex_Bit_Art from "./pages/Bultex_Bit_Art";
 
 
 import { Routes, Route } from "react-router-dom";
-
+import { Routes, Route, useLocation } from "react-router-dom";
 function App() {
+  const location = useLocation()
   gsap.registerPlugin(ScrollTrigger);
   let mm = gsap.matchMedia();
 
@@ -52,13 +53,12 @@ function App() {
         <Route path="/sleep" element={<Sleep />} />
         <Route path="/molles-ensacades" element={<Molles />} />
         <Route path="/normablock" element={<Normablock />} />
-        <Route path="/articulables" element={<Articulables />} />
         <Route path="/juvenil" element={<Juvenil />} />
         <Route path="/bultex" element={<Bultex />} />
-        <Route path="arce" element={<Arce />} />
-        <Route path="king" element={<King />} />
-        <Route path="articulables" element={<Articulables/>}/>
-        <Route path="bultex_bit_art" element={<Bultex_Bit_Art/>}/>
+        <Route path="/arce" element={<Arce />} />
+        <Route path="/king" element={<King />} />
+        <Route path="/articulables" element={<Articulables/>}/>
+        <Route path="/bultex_bit_art" element={<Bultex_Bit_Art/>}/>
       </Routes>
       {/*  <Footer /> */}
     </main>
