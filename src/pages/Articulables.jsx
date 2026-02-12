@@ -1,8 +1,8 @@
 export default function Articulables() {
   return (
     <main>
-      <div className="mt-50 p-10 flex flex-col  gap-10">
-        <h2 className="text-6xl lg:text-9xl bebas-neue-regular">Articulables</h2>
+      <div className=" p-10 flex flex-col  gap-10">
+        <h2 className="mt-30 text-7xl lg:text-9xl bebas-neue-regular">Articulables</h2>
         <h3 className="text-4xl lg:text-6xl bebas-neue-regular">MATALÀS ESPECÍFIC PER A LLIT ARTICULAT</h3>
         <p>
           Un matalàs articulat és un matalàs dissenyat per fer-se servir amb un

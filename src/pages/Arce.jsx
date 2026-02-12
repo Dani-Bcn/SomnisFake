@@ -3,9 +3,9 @@ import React from "react";
 export default function Arce() {
   return (
     <div className="p-10 flex flex-col gap-5 r">
-      <h1 className="mt-25 lg:mt-30 lg:text-9xl text-9xl bebas-neue-regular">
+      <h2 className="mt-25 lg:mt-30 lg:text-9xl text-7xl bebas-neue-regular">
         Arce
-      </h1>
+      </h2>
       <div className="flex  gap-10 lg:flex-row  flex-col">
         <img
           className="w-100 lg:w-150"
