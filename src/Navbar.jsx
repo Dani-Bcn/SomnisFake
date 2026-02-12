@@ -168,10 +168,10 @@ export default function Navbar() {
                 Bultex Bit Art
               </span>
               <span
-                onClick={() => navigate("/bultex_bit_art")}
+                onClick={() => navigate("/art20_nova")}
                 className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
               >
-                Art 20 Nove
+                Art20 Nova
               </span>
               <span
                 onClick={() => navigate("/king")}

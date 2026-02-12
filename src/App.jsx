@@ -17,11 +17,11 @@ import Bultex from "./pages/Bultex";
 import Arce from "./pages/Arce";
 import King from "./pages/King";
 import Bultex_Bit_Art from "./pages/Bultex_Bit_Art";
-
+import Art20_Nova from "./pages/Art20_Nova";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 function App() {
-  const location = useLocation()
+  const location = useLocation();
   gsap.registerPlugin(ScrollTrigger);
   let mm = gsap.matchMedia();
 
@@ -56,10 +56,11 @@ function App() {
         <Route path="/bultex" element={<Bultex />} />
         <Route path="/arce" element={<Arce />} />
         <Route path="/king" element={<King />} />
-        <Route path="/articulables" element={<Articulables/>}/>
-        <Route path="/bultex_bit_art" element={<Bultex_Bit_Art/>}/>
+        <Route path="/articulables" element={<Articulables />} />
+        <Route path="/bultex_bit_art" element={<Bultex_Bit_Art />} />
+        <Route path="/art20_nova" element={<Art20_Nova />} />
       </Routes>
-      {/*  <Footer /> */}
+      <Footer />
     </main>
   );
 }

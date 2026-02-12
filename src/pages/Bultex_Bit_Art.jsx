@@ -6,15 +6,13 @@ export default function Bultex_Bit_Art() {
       <h1 className="text-7xl lg:text-9xl  lg:mt-50 mt-40 bebas-neue-regular">
         BULTEX BIT-ART
       </h1>
-
       <div className="flex   flex-col ">
-        <h3 className=" lg:text-4xl text-3xl bebas-neue-regular">
+        <h3 className=" lg:text-6xl text-3xl bebas-neue-regular">
           Matalàs articulat de material cel·lular avançat Bultex Nanotech.
         </h3>
-
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-6">
+        <div className="flex flex-col lg:flex-row justify-center items-start lg:gap-6">
           <img
-            className="h-65 object-contain"
+            className="py-5 object-contain"
             src="/public/75-aniversari.avif"
             alt=""
           />
@@ -55,18 +53,22 @@ export default function Bultex_Bit_Art() {
           </p>
 
           <p>
-            3. El nucli Bultex Nanotech: s'adapta al pes i la musculatura per donar el suport precís, especialment dissenyat per a l'articulació del matalàs.
+            3. El nucli Bultex Nanotech: s'adapta al pes i la musculatura per
+            donar el suport precís, especialment dissenyat per a l'articulació
+            del matalàs.
           </p>
 
           <p>
-            4. Confecció en semicaixa: dota el matalàs d'una estètica diferencial i permet actuar millor els components interns.
+            4. Confecció en semicaixa: dota el matalàs d'una estètica
+            diferencial i permet actuar millor els components interns.
           </p>
 
           <p>
-            5. Barrera total®: protecció higiènica integral. Barrera que actua bloquejant el desenvolupament de les tres principals fonts de problemes higiènics en una superfície de descans: bacteris, àcars i fongs.
+            5. Barrera total®: protecció higiènica integral. Barrera que actua
+            bloquejant el desenvolupament de les tres principals fonts de
+            problemes higiènics en una superfície de descans: bacteris, àcars i
+            fongs.
           </p>
-
-          
         </div>
 
         <img

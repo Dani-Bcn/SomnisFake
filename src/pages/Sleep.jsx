@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom";
+
 
 export default function Sleep() {
   return (
-    <div className="  lg:p-10 px-5   lg:block w-screen h-full  overflow-hidden bg-blue-100/25 z-50">
+    <div className="lg:p-10 px-5 lg:block w-screen h-full overflow-hidden bg-blue-100/25 z-50">
       <h2 className="text-7xl lg:text-9xl  lg:mt-50 mt-40 bebas-neue-regular">
         Sleep
       </h2>
@@ -72,7 +72,7 @@ export default function Sleep() {
         </div>
         <div className="w-full justify-center items-center flex">
           <img
-            className="h-65 lg:h-100  lg:p-10 py-5"
+            className="sx:h-75 lg:h-125 lg:p-10 p-5"
             src="https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/esquema_somiador-AzGMJePy8LSxvb02.png"
             alt=""
           />

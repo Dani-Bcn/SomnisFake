@@ -37,7 +37,7 @@ export default function NavMenu() {
   return (
     <main className="lg:hidden z-250">
    
-      <header className=" w-10 flex items-center justify-between p-2 bg-white shadow-md z-50">
+      <header className=" w-10 flex items-center justify-between p-2 bg-white shadow-md z-50 rounded-sm">
      
         <button
           onClick={() => setOpen(!open)}

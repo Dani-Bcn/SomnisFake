@@ -21,7 +21,7 @@ export default function Header() {
       }}
       className=" w-full h-30  fixed z-250 flex items-center justify-around "
     >
-      <div className="absolute w-full  h-full backdrop-blur-xl bg-red-600/15  z-250"></div>
+      <div className="absolute w-full  h-full backdrop-blur-xl bg-red-800/50  z-250"></div>
        <LogoSvg />
       <Stars3D />
       <Navbar />

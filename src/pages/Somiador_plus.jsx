@@ -33,9 +33,9 @@ export default function SomiadorPlus() {
         </div>
       </div>
 
-      <div className=" flex flex-col py-5  lg:flex-row  justify-end items-end">
+      <div className=" flex flex-col py-5  lg:flex-row  justify-start items-start">
         <div className="flex flex-col gap-5">
-          <h3 className="text-3xl lg:text-6xl  bebas-neue-regular">
+          <h3  className="text-6xl  bebas-neue-regular">
             COMPOSICIÓ
           </h3>
 
@@ -71,7 +71,7 @@ export default function SomiadorPlus() {
         </div>
 
         <img
-          className="h-100 lg:p-10 py-10"
+          className="w-150 h-120 lg:p-10 py-10"
           src="https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/esquema_somiador-AzGMJePy8LSxvb02.png"
           alt=""
         />
