@@ -10,7 +10,7 @@ const menuItems = [
   "Normablock",
   "Arce",
   "Articulables",
-  "Bultex",
+  "King",
 ];
 
 export default function NavMenu() {

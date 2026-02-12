@@ -6,6 +6,7 @@ export default function Arce() {
       <h2 className="mt-25 lg:mt-30 lg:text-9xl text-7xl bebas-neue-regular">
         Arce
       </h2>
+       <h3 className="text-4xl lg:text-6xl bebas-neue-regular ">Matalàs de molles Normablock</h3>
       <div className="flex  gap-10 lg:flex-row  flex-col">
         <img
           className="w-100 lg:w-150"
@@ -13,7 +14,7 @@ export default function Arce() {
           alt=""
         />
         <div className="gap-5 flex flex-col">
-          <h3 className="text-4xl lg:text-6xl bebas-neue-regular ">Matalàs de molles Normablock</h3>
+         
           <p className="lg:text-xl">
             El matalàs Arce és un matalàs econòmic de molles Normablock i
             encoixinat Fibercel. Gràcies als seus 23 cm d'alçada aquest matalàs
