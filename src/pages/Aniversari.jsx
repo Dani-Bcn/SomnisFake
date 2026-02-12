@@ -1,12 +1,12 @@
 export default function Aniversari() {
   return (
-    <div className=" lg:block w-screen h-full  overflow-hidden bg-blue-100/25 z-50">
-      <h1 className="text-7xl lg:text-9xl text-center lg:mt-50 mt-40 bebas-neue-regular">
+    <div className="  lg:p-10 px-5 lg:gap-10 lg:block w-screen h-full  overflow-hidden bg-blue-100/25 z-50">
+      <h2 className="text-7xl lg:text-9xl  lg:mt-50 mt-40 bebas-neue-regular">
         75 Aniversari
-      </h1>
+      </h2>
 
-      <div className="flex lg:p-10 px-5 lg:gap-10  flex-col items-center justify-center">
-        <h3 className=" lg:text-4xl text-3xl bebas-neue-regular">
+      <div className="flex   flex-col ">
+        <h3 className=" lg:text-6xl text-3xl bebas-neue-regular">
           MATALÀS D'HOTEL ED.LIMITADA
         </h3>
 
@@ -39,52 +39,55 @@ export default function Aniversari() {
         </div>
       </div>
 
-      <div className="w-screen flex flex-col py-5  lg:flex-row bg-indigo-200/25 justify-start items-start">
-        <div className="flex flex-col lg:p-10 gap-5  px-5 lg:w-1/2 ">
-          <h3 className="text-6xl  bebas-neue-regular">COMPOSICIÓ</h3>
+      <div className=" flex flex-col py-5  lg:flex-row  justify-start items-start">
+        <div className="flex flex-col  gap-5">
+          <h3 className="text-3xl lg:text-6xl  bebas-neue-regular">
+            COMPOSICIÓ
+          </h3>
 
-          <p className="text-xl">
-            1. Teixit Stretch de gran tacte i pes que li proporciona elasticitat
-            i transpirabilitat.
+          <p>
+            <span>1. Teixit Stretch;</span> De gran tacte i pes que li
+            proporciona elasticitat i transpirabilitat.
           </p>
 
           <p>
-            2. Progression Visco®: combinació de Supersoft, material cel·lular
-            d'alta densitat i baixa fermesa que s'adapta al cos, i Viscofoam,
-            viscoelàstica d'alta densitat amb efecte memòria que acull la
-            persona en funció de la pressió i la petjada atèrmica.
+            <span>2. Progression Visco®:</span> combinació de Supersoft,
+            material cel·lular d'alta densitat i baixa fermesa que s'adapta al
+            cos, i Viscofoam, viscoelàstica d'alta densitat amb efecte memòria
+            que acull la persona en funció de la pressió i la petjada atèrmica.
           </p>
 
           <p>
-            3. Viscoair: material viscoelàstic que millora la qualitat del son i
-            proporciona una major transpirabilitat.
+            <span> 3. Viscoair: </span>material viscoelàstic que millora la
+            qualitat del son i proporciona una major transpirabilitat.
           </p>
 
           <p>
-            4. Capa de Polièter reforçat d'alta densitat: amortidor que
-            proporciona una estabilitat confortable durant el descans.
+            <span> 4. Capa de Polièter reforçatd'alta densitat:</span> amortidor
+            que proporciona una estabilitat confortable durant el descans.
           </p>
 
           <p>
-            5. Nucli Normablock Firm: sistema de molls de fil continu més
-            avançat del mercat que ofereix la fermesa i adaptació necessària per
-            a un descans complet.
+            <span>5. Nucli Normablock Firm:</span> sistema de molls de fil
+            continu més avançat del mercat que ofereix la fermesa i adaptació
+            necessària per a un descans complet.
           </p>
 
           <p>
-            6. Cinc nanses brodades que faciliten la mobilitat i transport del
+            <span> 6. Cinc nanses brodades:</span> Que faciliten la mobilitat i
+            transport del matalàs.
+          </p>
+
+          <p>
+            <span>7. Triple Barrera®:</span> Protecció higiènica total i
+            permanent. Barrera que actua contra les principals causes
+            d'al·lèrgies: àcars, bacteris i fongs; durant la vida útil del
             matalàs.
-          </p>
-
-          <p>
-            T. Triple Barrera®: Protecció higiènica total i permanent. Barrera
-            que actua contra les principals causes d'al·lèrgies: àcars,
-            bacteris i fongs; durant la vida útil del matalàs.
           </p>
         </div>
 
         <img
-          className="h-125 lg:p-10 p-5"
+          className="h-125 lg:p-10 py-10"
           src="/public/75-aniversari_composicio.avif"
           alt=""
         />

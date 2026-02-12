@@ -60,10 +60,7 @@ export default function Navbar() {
         onMouseEnter={() => setOpenMolles(true)}
         onMouseLeave={() => setOpenMolles(false)}
       >
-        <h3
-          onClick={() => navigate("/molles-ensacades")}
-          className="cursor-pointer hover:text-indigo-500 transition duration-500"
-        >
+        <h3 className="cursor-pointer hover:text-indigo-500 transition duration-500">
           Molles ensacades
         </h3>
 
@@ -165,13 +162,13 @@ export default function Navbar() {
               </span>
 
               <span
-                onClick={() => navigate("/aniversari")}
+                onClick={() => navigate("/bultex_bit_art")}
                 className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
               >
                 Bultex Bit Art
               </span>
               <span
-                onClick={() => navigate("/arce")}
+                onClick={() => navigate("/bultex_bit_art")}
                 className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
               >
                 Art 20 Nove

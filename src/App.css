@@ -12,6 +12,9 @@ html{
 .logo:hover {
   color: #ef4444;
 }
+span{
+font-weight: bold;
+}
 
 
 .block-background__video--fixed {

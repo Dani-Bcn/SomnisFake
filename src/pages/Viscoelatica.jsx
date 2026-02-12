@@ -2,10 +2,10 @@ import { useNavigate } from "react-router-dom";
 
 export default function Viscoelatica() {
   return (
-    <div className="w-full lg:h-screen p-10 lg:p-0 flex flex-col items-center justify-center z-100 bg-red-200/20">
-      <div className=" lg:w-1/2 clear-start mt-30 lg:mt-40 h-auto flex flex-col items-start justify-start gap-4 text-indigo-800 montserrat-regular">
-        <h1 className="font-bold text-4xl lg:text-7xl">VISCOELÀSTICA</h1>
-        <h2 className="font-bold text-2xl lg:text-3xl"> ¿QUE ÉS LA VISCOELÀSTICA? </h2>
+    <div className="w-full  p-5  lg:mt-20 lg:px-10 flex flex-col   z-100 bg-red-200/20 bebas-regular">
+      <div className="  clear-start mt-30 lg:mt-40 h-auto flex flex-col items-start justify-start gap-4  montserrat-regular">
+        <h1 className=" text-4xl lg:text-9xl bebas-neue-regular">VISCOELÀSTICA</h1>
+        <h2 className=" text-2xl lg:text-6xl bebas-neue-regular"> ¿QUE ÉS LA VISCOELÀSTICA? </h2>
         <p>
           La viscoelàstica és un material sintètic sensible a la calor i la
           pressió que s'adapta a la forma del cos i recupera la seva forma

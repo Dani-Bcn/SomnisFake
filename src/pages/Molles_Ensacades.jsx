@@ -37,21 +37,23 @@ export default function Molles() {
   }, []);
 
   return (
-    <div className="w-screen h-[300%] p-10 flex flex-col gap-10 justify-center items-center  ">
+    <div className="w-screen p-5 lg:p-10 flex flex-col gap-10  ">
       <img
         className="reveal hidden absolute inset-0 mx-auto mt-20 w-100 lg:w-125 opacity-30 pointer-events-none"
         src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=468,fit=crop/YBgjMgabRgiQr27z/polaroid_molles_ensacades-min-AQEewW5BaMtwVEg6.png"
         alt=""
       />
 
-      {/* CONTENIDO */}
-      <h1 className="mt-50 lg:text-8xl text-6xl bebas-neue-regular text-center relative z-10">
+      <h2 className="mt-50 text-6xl lg:text-9xl bebas-neue-regular z-10" >
+        MOLLES ENSACADES
+      </h2>
+      <h3 className=" text-3xl lg:text-6xl bebas-neue-regular relative z-10">
         ¿QUE SÓN LES MOLLES ENSACADES?
-      </h1>
+      </h3>
 
       <div className="   gap-10 lg:flex-row flex-col relative z-10 max-w-6xl">
         <div className="gap-5 flex flex-col">
-          <p className="lg:text-xl">
+          <p >
             Els molls ensacats són un sistema de molls individuals, cadascun
             embolicat en la seva pròpia bossa de roba. Aquesta independència
             permet que cada moll s'adapti de manera individual a la pressió,

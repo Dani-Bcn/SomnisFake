@@ -16,6 +16,8 @@ import Juvenil from "./pages/Juvenil";
 import Bultex from "./pages/Bultex";
 import Arce from "./pages/Arce";
 import King from "./pages/King";
+import Bultex_Bit_Art from "./pages/Bultex_Bit_Art";
+
 
 import { Routes, Route } from "react-router-dom";
 
@@ -56,6 +58,7 @@ function App() {
         <Route path="arce" element={<Arce />} />
         <Route path="king" element={<King />} />
         <Route path="articulables" element={<Articulables/>}/>
+        <Route path="bultex_bit_art" element={<Bultex_Bit_Art/>}/>
       </Routes>
       {/*  <Footer /> */}
     </main>
