@@ -8,6 +8,7 @@ export default function Navbar() {
   const [openMolles, setOpenMolles] = useState(false);
   const [openNorma, setOpenNorma] = useState(false);
   const [openArtuculable, setOpenArticulable] = useState(false);
+  const [openJuvenil, setOpenJuvenil] = useState(false);
 
   return (
     <div className="hidden lg:flex w-1/2 h-20 items-center text-sm justify-end text-amber-200 gap-6 z-250 montserrat-regular">
@@ -159,6 +160,52 @@ export default function Navbar() {
                 className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
               >
                 Articulables
+              </span>
+
+              <span
+                onClick={() => navigate("/bultex_bit_art")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Bultex Bit Art
+              </span>
+              <span
+                onClick={() => navigate("/art20_nova")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Art20 Nova
+              </span>
+              <span
+                onClick={() => navigate("/king")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Sensium
+              </span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+      <div
+        className="relative"
+        onMouseEnter={() => setOpenJuvenil(true)}
+        onMouseLeave={() => setOpenJuvenil(false)}
+      >
+        <h3 className="cursor-pointer hover:text-indigo-500 transition duration-500">
+          Juvenil
+        </h3>
+        <AnimatePresence>
+          {openJuvenil && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+            >
+              <span
+                onClick={() => navigate("/Juvenil")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Juvenil
               </span>
 
               <span
