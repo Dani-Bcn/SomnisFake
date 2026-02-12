@@ -9,7 +9,7 @@ const menuItems = [
   "Sleep",
   "Normablock",
   "Arce",
-  "Juvenil",
+  "Articulables",
   "Bultex",
 ];
 

@@ -6,11 +6,15 @@ export default function Navbar() {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [openMolles, setOpenMolles] = useState(false);
-  const [openNorma, setOpenNorma] = useState(false)
+  const [openNorma, setOpenNorma] = useState(false);
+  const [openArtuculable, setOpenArticulable] = useState(false);
 
   return (
     <div className="hidden lg:flex w-1/2 h-20 items-center text-sm justify-end text-amber-200 gap-6 z-250 montserrat-regular">
-      <h3 onClick={() => navigate("/aniversari")} className="cursor-pointer hover:text-indigo-500 transition duration-500">
+      <h3
+        onClick={() => navigate("/aniversari")}
+        className="cursor-pointer hover:text-indigo-500 transition duration-500"
+      >
         75 Aniversari
       </h3>
 
@@ -20,10 +24,7 @@ export default function Navbar() {
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        <h3
-         
-          className="cursor-pointer hover:text-indigo-500 transition duration-500"
-        >
+        <h3 className="cursor-pointer hover:text-indigo-500 transition duration-500">
           Viscoelástica
         </h3>
 
@@ -97,10 +98,7 @@ export default function Navbar() {
         onMouseEnter={() => setOpenNorma(true)}
         onMouseLeave={() => setOpenNorma(false)}
       >
-        <h3
-        
-          className="cursor-pointer hover:text-indigo-500 transition duration-500"
-        >
+        <h3 className="cursor-pointer hover:text-indigo-500 transition duration-500">
           Normablock
         </h3>
 
@@ -126,11 +124,63 @@ export default function Navbar() {
               >
                 75 Aniversari
               </span>
-               <span
+              <span
                 onClick={() => navigate("/arce")}
                 className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
               >
                 Arce
+              </span>
+              <span
+                onClick={() => navigate("/king")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                King
+              </span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+      <div
+        className="relative"
+        onMouseEnter={() => setOpenArticulable(true)}
+        onMouseLeave={() => setOpenArticulable(false)}
+      >
+        <h3 className="cursor-pointer hover:text-indigo-500 transition duration-500">
+          Articulables
+        </h3>
+        <AnimatePresence>
+          {openArtuculable && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+            >
+              <span
+                onClick={() => navigate("/articulables")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Articulables
+              </span>
+
+              <span
+                onClick={() => navigate("/aniversari")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Bultex Bit Art
+              </span>
+              <span
+                onClick={() => navigate("/arce")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Art 20 Nove
+              </span>
+              <span
+                onClick={() => navigate("/king")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Sensium
               </span>
             </motion.div>
           )}

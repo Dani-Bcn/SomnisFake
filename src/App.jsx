@@ -6,8 +6,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Viscoelastica from "./pages/Viscoelatica";
 import Aniversari from "./pages/Aniversari";
-import America from "./pages/America";
-import Africa from "./pages/Africa";
 import Home from "./Home";
 import SomiadorPlus from "./pages/Somiador_plus";
 import Sleep from "./pages/Sleep";
@@ -17,6 +15,7 @@ import Articulables from "./pages/Articulables";
 import Juvenil from "./pages/Juvenil";
 import Bultex from "./pages/Bultex";
 import Arce from "./pages/Arce";
+import King from "./pages/King";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -54,9 +53,9 @@ function App() {
         <Route path="/articulables" element={<Articulables />} />
         <Route path="/juvenil" element={<Juvenil />} />
         <Route path="/bultex" element={<Bultex />} />
-        <Route path="/america" element={<America />} />
-        <Route path="/africa" element={<Africa />} />
         <Route path="arce" element={<Arce />} />
+        <Route path="king" element={<King />} />
+        <Route path="articulables" element={<Articulables/>}/>
       </Routes>
       {/*  <Footer /> */}
     </main>
