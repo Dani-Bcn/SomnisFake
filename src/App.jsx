@@ -42,7 +42,7 @@ function App() {
 
   return (
     <main
-      className="w-screen h-auto  
+      className=" h-auto  
      flex flex-col  items-center  "
     >
       <Header />
@@ -63,6 +63,7 @@ function App() {
         <Route path="/art20_nova" element={<Art20_Nova />} />
         <Route path="/apple" element={<Apple />} />
         <Route path="/huracan" element={<Huracan />} />
+        <Route path="/bultex" element={<Bultex/>}/>
 
       </Routes>
       <Footer />

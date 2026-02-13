@@ -9,9 +9,10 @@ export default function Navbar() {
   const [openNorma, setOpenNorma] = useState(false);
   const [openArtuculable, setOpenArticulable] = useState(false);
   const [openJuvenil, setOpenJuvenil] = useState(false);
+  const [openBultex, setOpenBultex] = useState(false);
 
   return (
-    <div className="hidden lg:flex w-1/2 h-20 items-center text-sm justify-end text-amber-200 gap-6 z-250 montserrat-regular">
+    <div className="hidden lg:flex  h-20 items-center text-sm justify-end text-amber-200 gap-6 z-250 montserrat-regular">
       <h3
         onClick={() => navigate("/aniversari")}
         className="cursor-pointer hover:text-indigo-500 transition duration-500"
@@ -174,7 +175,6 @@ export default function Navbar() {
               >
                 Art20 Nova
               </span>
-             
             </motion.div>
           )}
         </AnimatePresence>
@@ -213,7 +213,46 @@ export default function Navbar() {
                 className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
               >
                 Huracán
-              </span>             
+              </span>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+      <div
+        className="relative"
+        onMouseOver={() => setOpenBultex(true)}
+        onMouseOut={() => setOpenBultex(false)}
+      >
+        <h3 className="cursor-pointer hover:text-indigo-500 transition duration-500">
+          Bultex
+        </h3>
+        <AnimatePresence>
+          {openBultex && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+            >
+              <span
+                onClick={() => navigate("/bultex")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Bultex
+              </span>
+              <span
+                onClick={() => navigate("/bultex_bit")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Bultex bit
+              </span>
+              <span
+                onClick={() => navigate("/bultex_sim")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Bultex sim
+              </span>
             </motion.div>
           )}
         </AnimatePresence>
