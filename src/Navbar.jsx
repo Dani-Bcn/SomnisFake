@@ -12,7 +12,7 @@ export default function Navbar() {
   const [openBultex, setOpenBultex] = useState(false);
 
   return (
-    <div className="hidden lg:flex  h-20 items-center text-sm justify-end font-black text-amber-500 gap-6 z-250 montserrat-regular">
+    <div className="hidden lg:flex  h-20 items-center text-sm justify-end font-semibold text-amber-200 gap-6 z-250 montserrat-regular">
       <h3
         onClick={() => navigate("/aniversari")}
         className="cursor-pointer hover:text-indigo-500 transition duration-500"
@@ -37,11 +37,11 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+              className="absolute top-full right-0 mt-2 bg-indigo-900/50 backdrop-blur-[3px] text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
             >
               <span
                 onClick={() => navigate("/viscoelastica")}
-                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+                className="px-4 py-2 hover:bg-amber-800  cursor-pointer"
               >
                 Viscoelástica
               </span>
@@ -73,7 +73,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+              className="absolute top-full right-0 mt-2 bg-indigo-900/50 backdrop-blur-[3px] text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
             >
               <span
                 onClick={() => navigate("/molles-ensacades")}
@@ -108,7 +108,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+              className="absolute top-full right-0 mt-2 bg-indigo-900/50 backdrop-blur-[3px] text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
             >
               <span
                 onClick={() => navigate("/normablock")}
@@ -154,7 +154,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+              className="absolute top-full right-0 mt-2 bg-indigo-900/50 backdrop-blur-[3px] text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
             >
               <span
                 onClick={() => navigate("/articulables")}
@@ -194,7 +194,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+              className="absolute top-full right-0 mt-2 bg-indigo-900/50 backdrop-blur-[3px] text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
             >
               <span
                 onClick={() => navigate("/Juvenil")}
@@ -233,7 +233,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="absolute top-full right-0 mt-2 bg-amber-900 text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
+              className="absolute top-full right-0 mt-2 bg-indigo-900/50 backdrop-blur-[3px] text-amber-200 rounded shadow-lg flex flex-col min-w-[180px] overflow-hidden"
             >
               <span
                 onClick={() => navigate("/bultex")}
