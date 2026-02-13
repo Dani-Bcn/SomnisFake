@@ -242,16 +242,16 @@ export default function Navbar() {
                 Bultex
               </span>
               <span
-                onClick={() => navigate("/bultex_bit")}
-                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
-              >
-                Bultex bit
-              </span>
-              <span
                 onClick={() => navigate("/bultex_sim")}
                 className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
               >
                 Bultex sim
+              </span>
+              <span
+                onClick={() => navigate("/bultex_bit")}
+                className="px-4 py-2 hover:bg-amber-800 cursor-pointer"
+              >
+                Bultex bit
               </span>
             </motion.div>
           )}

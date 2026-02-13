@@ -1,6 +1,5 @@
 import "./App.css";
 import gsap from "gsap";
-import { useEffect, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -19,7 +18,9 @@ import King from "./pages/King";
 import Bultex_Bit_Art from "./pages/Bultex_Bit_Art";
 import Art20_Nova from "./pages/Art20_Nova";
 import Apple from "./pages/Apple";
-import Huracan from "./pages/Huracan"
+import Huracan from "./pages/Huracan";
+import Bultex_Bit from "./pages/Bultex_Bit";
+import Bultex_Sim from "./pages/Bultex_Sim";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 function App() {
@@ -63,8 +64,9 @@ function App() {
         <Route path="/art20_nova" element={<Art20_Nova />} />
         <Route path="/apple" element={<Apple />} />
         <Route path="/huracan" element={<Huracan />} />
-        <Route path="/bultex" element={<Bultex/>}/>
-
+        <Route path="/bultex" element={<Bultex />} />
+        <Route path="/bultex_bit" element={<Bultex_Bit />} />
+        <Route path="/bultex_sim" element={<Bultex_Sim />} />
       </Routes>
       <Footer />
     </main>
