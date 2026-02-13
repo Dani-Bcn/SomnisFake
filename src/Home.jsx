@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    mm.add("(min-width:900px)", () => {
+    /*    mm.add("(min-width:900px)", () => {
       gsap.to(".box", {
         scrollTrigger: {
           trigger: ".box",
@@ -21,11 +21,11 @@ export default function Home() {
           scrub: 2,
         },
         y: -600,
-      });
-    });
+      }); 
+    });*/
   }, []);
   return (
-    <main className="w-full h-screen box  text-2xl bg-red-200 z-150 ">
+    <main className=" flex justify-center">
       <video
         src="https://videos.pexels.com/video-files/4057148/4057148-uhd_2732_1440_25fps.mp4"
         autoPlay
@@ -35,35 +35,17 @@ export default function Home() {
         className="fixed  brightness-25 block-background__video--fixed block-background__image"
         poster="https://images.pexels.com/videos/4057148/pexels-photo-4057148.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
       />
-
-      <m.div
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        initial={{ opacity: 0, y: 20 }}
-        exit={{ opacity: 0 }}
-        transition={{
-          duration: 1,
-          ease: "circOut",
-        }}
-        className="w-full  mt-50  flex flex-col items-center justify-center gap-10 text-center text-white z-10 absolute top-0 left-0  px-4"
-      >
-        <div className="w-full ">
-          <h2>Volem que dormis millor cada dia amb marques de confiança com</h2>
+      <div className="h-screen"></div>
+      <div className="absolute w-11/12   text-center montserrat-regular text-xl text-gray-300 mt-40  flex flex-col lg:flex-row lg:mt-70 lg:text-3xl lg:gap-50 justify-center">
+        <div className="flex flex-col lg:gap-10 mb-15 lg:w-5/12">
+          <h3>Volem que dormis millor cada dia amb marques de confiança com</h3>
           <LogoPikolinSvg />
         </div>
-        <div>
-          <h3>DORM A CASA TEVA</h3>
-          <h3 className="bebas-neue-regular ">COM EN UN </h3>
-          <span className="text-blue-600 bebas-neue-regular text-9xl">
-            HOTEL
-          </span>
+        <div className="lg:w-3/12 bebas-neue-regular text-5xl w-1/2 text-start">
+          <h3>DORM A CASA TEVA COM EN UN</h3>
+          <h2 className="text-9xl lg:text-[200px] text-indigo-300">Hotel</h2>
         </div>
-        <div className="logoBultex mt-10 opacity-0 lg:mt-25">
-          <BultexLogoSvg />
-        </div>
-      </m.div>
+      </div>
     </main>
   );
 }
