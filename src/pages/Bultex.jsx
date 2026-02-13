@@ -1,6 +1,6 @@
 export default function Bultex() {
   return (
-    <div className=" h-screen bg-gray-300 flex flex-col px-10 ">
+    <div className=" h-screen lg:h-full bg-gray-300 flex flex-col px-10 ">
       <h2 className="lg:mt-60 mt-40 text-6xl lg:text-9xl bebas-neue-regular">
         Bultex
       </h2>
