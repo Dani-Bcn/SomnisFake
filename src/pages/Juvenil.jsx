@@ -2,7 +2,7 @@ export default function Juvenil() {
   return (
     <main>
       <div className=" px-10 pb-5 flex flex-col gap-1">
-        <h2 className="mt-30 lg:mt-50 text-7xl lg:text-9xl bebas-neue-regular">
+        <h2 className="mt-40 lg:mt-50 text-7xl lg:text-9xl bebas-neue-regular">
           Juvenil
         </h2>
         <h3 className="text-4xl lg:text-6xl bebas-neue-regular">
