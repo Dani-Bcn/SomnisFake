@@ -8,7 +8,9 @@ const menuItems = [
   "Molles-ensacades", 
   "Normablock",  
   "Articulables", 
-  "Juvenil"
+  "Juvenil",
+  "Bultex"
+
 ];
 
 export default function NavMenu() {
