@@ -12,7 +12,7 @@ export default function Navbar() {
   const [openBultex, setOpenBultex] = useState(false);
 
   return (
-    <div className="hidden lg:flex  h-20 items-center text-sm justify-end text-amber-200 gap-6 z-250 montserrat-regular">
+    <div className="hidden lg:flex  h-20 items-center text-sm justify-end font-black text-amber-500 gap-6 z-250 montserrat-regular">
       <h3
         onClick={() => navigate("/aniversari")}
         className="cursor-pointer hover:text-indigo-500 transition duration-500"

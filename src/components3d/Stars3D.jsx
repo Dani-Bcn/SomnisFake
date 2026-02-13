@@ -7,13 +7,13 @@ const Stars3D = () => {
      <Canvas>
       <Stars
         radius={100} // tamaño del espacio
-        depth={10} // profundidad
+        depth={20} // profundidad
         count={5000} // número de estrellas
-        factor={1} // tamaño
-        color="rgb(255,150,0)" // color de las estrellas
-        saturation={0} // blanco
+        factor={5} // tamaño
+        color="rgb(255,2550,0)" // color de las estrellas
+        saturation={50} // blanco
         fade
-        speed={3}
+        speed={2}
       />
     </Canvas  > 
     </div>
