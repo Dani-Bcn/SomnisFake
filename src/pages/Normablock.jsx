@@ -1,7 +1,7 @@
 export default function Normablock() {
   return (
-    <div className="px-10 flex flex-col gap-5">
-      <h2 className="mt-40 lg:mt-50 lg:text-9xl text-6xl bebas-neue-regular">Normablock</h2>
+    <div className="px-5 flex flex-col gap-5">
+      <h2 className="mt-40 lg:mt-60 lg:text-9xl text-6xl bebas-neue-regular">Normablock</h2>
       <h3 className="lg:text-6xl text-4xl bebas-neue-regular"> ¿QUÈ ÉS LA TECNOLOGIA NORMABLOCK® DE PIKOLIN?</h3>
       <p className="pb-5">
          Sistema de molls de fil
