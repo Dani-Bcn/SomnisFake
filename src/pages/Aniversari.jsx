@@ -1,9 +1,23 @@
+import { motion as m } from "framer-motion";
+
 export default function Aniversari() {
   return (
-    <div className="  lg:p-10 px-5 lg:gap-10 lg:block w-screen h-full  overflow-hidden bg-blue-100/25 z-50">
-      <h2 className="text-7xl lg:text-9xl  lg:mt-50 mt-40 bebas-neue-regular">
+    <m.div
+      initial={{ opacity: 0, y: -40 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+      className="  lg:p-10 px-5 lg:gap-10 lg:block w-screen h-full  overflow-hidden bg-blue-100/25 z-50"
+    >
+      <m.h2
+        initial={{ opacity: 0, y: 80 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -8 }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
+        className="text-7xl lg:text-9xl  lg:mt-50 mt-40 bebas-neue-regular"
+      >
         75 Aniversari
-      </h2>
+      </m.h2>
 
       <div className="flex   flex-col ">
         <h3 className=" lg:text-6xl text-3xl bebas-neue-regular">
@@ -11,8 +25,12 @@ export default function Aniversari() {
         </h3>
 
         <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-6">
-          <img
-            className="h-65 object-contain"
+          <m.img
+            initial={{ opacity: 0, y: -40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.75, ease: "easeOut" }}
+            className="h-65 object-contain "
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=368,fit=crop,trim=422.1879815100154;18.48998459167951;640.9861325115562;21.571648690292758/YBgjMgabRgiQr27z/75-aniversari-mjE41gngEbfqL7aL.webp"
             alt=""
           />
@@ -92,6 +110,6 @@ export default function Aniversari() {
           alt=""
         />
       </div>
-    </div>
+    </m.div>
   );
 }
