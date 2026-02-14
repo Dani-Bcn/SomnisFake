@@ -3,17 +3,17 @@ import { useNavigate } from "react-router-dom";
 
 const LogoSvg = ({ scale = 1 }) => {
   const navigate = useNavigate();
-  const [changeColor, setChangeColor] = useState("#FFD500");
-  const [changeColor2, setChangeColor2] = useState("#EF4444");
+  const [changeColor, setChangeColor] = useState("#f5f5f5");
+  const [changeColor2, setChangeColor2] = useState("#fbff1f");
 
   const handleColorChange = () => {
-    setChangeColor("#EF4444");
-    setChangeColor2("#FFD500");
+    setChangeColor("#fbff1f");
+    setChangeColor2("#fc7373");
   };
 
   const handleColorChange2 = () => {
-    setChangeColor("#FFD500");
-    setChangeColor2("#EF4444");
+    setChangeColor("#f5f5f5");
+    setChangeColor2("#fbff1f");
   };
 
   return (

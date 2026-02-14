@@ -63,7 +63,7 @@ export default function SomiadorPlus() {
           </p>
 
           <p>
-            <span> 5. Triple Barrera®:</span> Protección higiénica total y
+            <span> T. Triple Barrera®:</span> Protección higiénica total y
             permanente. Barrera que actúa contra las principales causas de
             alergias: ácaros, bacterias y hongos; durante la vida útil del
             colchón.

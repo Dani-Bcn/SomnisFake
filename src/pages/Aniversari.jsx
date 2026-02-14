@@ -79,7 +79,7 @@ export default function Aniversari() {
           </p>
 
           <p>
-            <span>7. Triple Barrera®:</span> Protecció higiènica total i
+            <span>T. Triple Barrera®:</span> Protecció higiènica total i
             permanent. Barrera que actua contra les principals causes
             d'al·lèrgies: àcars, bacteris i fongs; durant la vida útil del
             matalàs.
