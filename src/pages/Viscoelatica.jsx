@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function Viscoelatica() {
   return (
     <div className="w-full    lg:mt-20 lg:px-10 flex flex-col   z-100 bg-red-200/20 bebas-regular">
-      <div className=" px-5 clear-start mt-40  h-auto flex flex-col items-start justify-start gap-4  montserrat-regular">
+      <div className=" p-5 clear-start mt-40  h-auto flex flex-col items-start justify-start gap-4  montserrat-regular">
         <h2 className=" text-6xl lg:text-9xl bebas-neue-regular">
           VISCOELÀSTICA
         </h2>
@@ -19,7 +19,7 @@ export default function Viscoelatica() {
           matalassos i coixins, ja que alleuja la pressió en punts clau com
           espatlles i malucs i millora la postura. El material, desenvolupat per
           la NASA a la dècada de 1960, es coneix també com a "escuma amb
-          memòria" o "memory foam". Els matalassos viscoelàstics Pikolin
+          memòria" o "memory foam",<br/><br />Els matalassos viscoelàstics Pikolin
           s'adapten punt per punt al teu cos per a un descans complet i
           relaxant. Les seves propietats us ofereixen una adaptabilitat perfecta
           perquè cada nit gaudiu d'un somni reparador que us permeti començar

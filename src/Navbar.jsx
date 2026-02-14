@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion as m, AnimatePresence } from "framer-motion";
 
@@ -11,6 +11,8 @@ export default function Navbar() {
   const [openJuvenil, setOpenJuvenil] = useState(false);
   const [openBultex, setOpenBultex] = useState(false);
 
+
+
   return (
     <div className="hidden lg:flex   h-20 items-center text-[15px] justify-end font-semibold text-gray-50 gap-6 z-250 montserrat-regular">
       <h3
@@ -22,11 +24,12 @@ export default function Navbar() {
 
       {/* Desplegable Viscoelástica */}
       <div
+  
         className="relative"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        <h3 className="cursor-pointer hover:text-amber-200 transition duration-500">
+        <h3    className="cursor-pointer hover:text-amber-200 transition duration-500">
           Viscoelástica
         </h3>
 

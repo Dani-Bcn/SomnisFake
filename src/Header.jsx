@@ -3,10 +3,16 @@ import LogoSvg from "./componentsSvg.jsx/LogoSVG";
 import Stars3D from "./components3d/Stars3D";
 import Navbar from "./Navbar";
 import NavMenu from "./NavMenu";
+import { useEffect, useState } from "react";
+import { useViewTransitionState } from "react-router-dom";
 
 export default function Header() {
- 
-
+  const [open, setOpen] = useState(false);
+  const inMobile = (open) => {
+    setOpen(open);
+  
+  };
+  console.log(open);
   return (
     <m.div
       animate={{
@@ -22,11 +28,10 @@ export default function Header() {
       className=" w-full h-30  fixed z-250 flex items-center justify-around "
     >
       <div className="absolute w-full  h-full backdrop-blur-xl bg-red-600/75  z-250"></div>
-       <LogoSvg />
+      <LogoSvg open={open} />
       <Stars3D />
       <Navbar />
-      <NavMenu /> 
-    
+      <NavMenu inMobile={inMobile} />
     </m.div>
   );
 }

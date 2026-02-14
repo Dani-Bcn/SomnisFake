@@ -3,38 +3,42 @@ import { motion as m } from "framer-motion";
 export default function Aniversari() {
   return (
     <m.div
-      initial={{ opacity: 0, y: -40 }}
+      initial={{ opacity: 0, y: -60 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      className="  lg:p-10 px-5 lg:gap-10 lg:block w-screen h-full  overflow-hidden bg-blue-100/25 z-50"
+      transition={{ duration: 1, ease: "easeOut" }}
+      className="  lg:p-10 px-5 lg:gap-10 bg-[#d1b6a0] lg:block w-screen h-full  overflow-hidden  z-50"
     >
       <m.h2
         initial={{ opacity: 0, y: 80 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -8 }}
-        transition={{ duration: 0.75, ease: "easeOut" }}
-        className="text-7xl lg:text-9xl  lg:mt-50 mt-40 bebas-neue-regular"
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="text-7xl lg:text-9xl   lg:mt-50 mt-40 bebas-neue-regular"
       >
         75 Aniversari
       </m.h2>
-
       <div className="flex   flex-col ">
         <h3 className=" lg:text-6xl text-3xl bebas-neue-regular">
           MATALÀS D'HOTEL ED.LIMITADA
         </h3>
-
         <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-6">
-          <m.img
-            initial={{ opacity: 0, y: -40 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.75, ease: "easeOut" }}
-            className="h-65 object-contain "
-            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=368,fit=crop,trim=422.1879815100154;18.48998459167951;640.9861325115562;21.571648690292758/YBgjMgabRgiQr27z/75-aniversari-mjE41gngEbfqL7aL.webp"
-            alt=""
-          />
-          <p className="bebas-regular">
+          <div className=" flex  justify-center lg:w-1500 lg:h-75 py-5  overflow-hidden ">
+            <img
+              className="w-full object-cover "
+              src="https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/75-aniversari-mjE41gngEbfqL7aL.webp"
+              alt=""
+            />
+          </div>
+          <m.p
+            initial={{ opacity: 0, y: 120 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+          opacity: { duration: 3, ease: "easeOut" },
+          y: { duration: 1.5, ease: "easeOut" },
+        }}
+            className="bebas-regular"
+          >
             Hem creat el matalàs perfecte perquè dormis a casa, com en un hotel.
             Pikolin, a través de Pikolin Contract és el proveïdor de matalassos
             de les grans cadenes hoteleres del món. I per celebrar el nostre 75è
@@ -53,11 +57,21 @@ export default function Aniversari() {
             fongs al matalàs. A més, propi d'un matalàs d'hotel, el teixit
             Stretch és ignífug i antixinxes. La millor opció si vols un matalàs
             de qualitat superior.
-          </p>
+          </m.p>
         </div>
       </div>
 
-      <div className=" flex flex-col py-5  lg:flex-row  justify-start items-start">
+      <m.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -8 }}
+        viewport={{ once: true }}
+        transition={{
+          opacity: { duration: 3, ease: "easeOut" },
+          y: { duration: 1, ease: "easeOut" },
+        }}
+        className=" flex flex-col py-5  lg:flex-row  justify-start items-start"
+      >
         <div className="flex flex-col  gap-5">
           <h3 className="text-3xl lg:text-6xl  bebas-neue-regular">
             COMPOSICIÓ
@@ -109,7 +123,7 @@ export default function Aniversari() {
           src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=737,fit=crop,trim=29.88399071925754;18.190255220417633;41.577726218097446;32.48259860788863/YBgjMgabRgiQr27z/75-aniversari_composicio-YNqMagzrgzIpeqEq.webp"
           alt=""
         />
-      </div>
+      </m.div>
     </m.div>
   );
 }

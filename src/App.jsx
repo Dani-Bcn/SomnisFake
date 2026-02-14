@@ -23,7 +23,11 @@ import Bultex_Bit from "./pages/Bultex_Bit";
 import Bultex_Sim from "./pages/Bultex_Sim";
 
 import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 function App() {
+
+ 
   const location = useLocation();
   gsap.registerPlugin(ScrollTrigger);
   let mm = gsap.matchMedia();
@@ -44,7 +48,7 @@ function App() {
   return (
     <main
       className=" h-auto  
-     flex flex-col  items-center  "
+     flex flex-col  items-center"
     >
       <Header />
       <Routes location={location} key={location.pathname}>

@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const LogoSvg = ({ scale = 1 }) => {
+const LogoSvg = ({ open }) => {
+  console.log(open);
+
   const navigate = useNavigate();
   const [changeColor, setChangeColor] = useState("#f5f5f5");
   const [changeColor2, setChangeColor2] = useState("#fbff1f");
+  useEffect(() => {
+    !open ? setChangeColor("#fbff1f") : setChangeColor("#f5f5f5");
+  }, [open]);
 
   const handleColorChange = () => {
     setChangeColor("#fbff1f");
@@ -36,7 +41,9 @@ const LogoSvg = ({ scale = 1 }) => {
           clipRule: "evenodd",
         }}
       >
-        <g transform={`scale(${scale})`} transformOrigin="center"></g>
+        {" "}
+        {/* <g transform={`scale(${scale})`} transformOrigin="center"></g> */}
+        <g transform={`scale(2)`} transformOrigin="center"></g>
         <defs>
           <style>{`
     .fil0 {
@@ -51,7 +58,6 @@ const LogoSvg = ({ scale = 1 }) => {
     }
   `}</style>
         </defs>
-
         <g id="Capa_x0020_1">
           <path
             className="fil0"
