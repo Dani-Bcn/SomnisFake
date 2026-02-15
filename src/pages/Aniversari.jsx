@@ -1,13 +1,31 @@
-import { motion as m } from "framer-motion";
-
+import { motion as m, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 export default function Aniversari() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+    const handleChange = () => {
+      setIsDesktop(mediaQuery.matches);
+    };
+
+    handleChange();
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
+
   return (
     <m.div
       initial={{ opacity: 0, y: -60 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="  lg:p-10 px-5 lg:gap-10 bg-[#d1b6a0] lg:block w-screen h-full  overflow-hidden  z-50"
+      className="  lg:p-10 px-5 lg:gap-10 bg-[#d6c3b3] lg:block w-screen h-full  overflow-hidden  z-50"
     >
       <m.h2
         initial={{ opacity: 0, y: 80 }}
@@ -23,20 +41,26 @@ export default function Aniversari() {
           MATALÀS D'HOTEL ED.LIMITADA
         </h3>
         <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-6">
-          <div className=" flex  justify-center lg:w-1500 lg:h-75 py-5  overflow-hidden ">
+          <m.div
+            initial={{ opacity: 0, y: -80 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className=" flex  justify-center lg:w-1500 lg:h-75 py-5  overflow-hidden "
+          >
             <img
               className="w-full object-cover "
               src="https://assets.zyrosite.com/cdn-cgi/image//YBgjMgabRgiQr27z/75-aniversari-mjE41gngEbfqL7aL.webp"
               alt=""
             />
-          </div>
+          </m.div>
           <m.p
             initial={{ opacity: 0, y: 120 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-          opacity: { duration: 3, ease: "easeOut" },
-          y: { duration: 1.5, ease: "easeOut" },
-        }}
+              opacity: { duration: 1, ease: "easeOut" },
+              y: { duration: 1, ease: "easeOut" },
+            }}
             className="bebas-regular"
           >
             Hem creat el matalàs perfecte perquè dormis a casa, com en un hotel.
@@ -118,11 +142,45 @@ export default function Aniversari() {
           </p>
         </div>
 
-        <img
-          className="h-125 lg:p-10 py-10"
+        <m.img
+          layoutId="aniversari-image"
+          onClick={() => setIsOpen(true)}
+          className="img2 h-125 lg:p-10 py-10 cursor-pointer transition-transform duration-300 hover:scale-105"
           src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=737,fit=crop,trim=29.88399071925754;18.190255220417633;41.577726218097446;32.48259860788863/YBgjMgabRgiQr27z/75-aniversari_composicio-YNqMagzrgzIpeqEq.webp"
           alt=""
         />
+        {isDesktop && (
+          <AnimatePresence>
+            {isOpen && (
+              <>
+                {/* Overlay oscuro con blur */}
+                <m.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="fixed inset-0 bg-black/70 backdrop-blur-md z-40"
+                  onClick={() => setIsOpen(false)}
+                />
+
+                {/* Imagen centrada */}
+                <m.img
+                  layoutId="aniversari-image"
+                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=737,fit=crop,trim=29.88399071925754;18.190255220417633;41.577726218097446;32.48259860788863/YBgjMgabRgiQr27z/75-aniversari_composicio-YNqMagzrgzIpeqEq.webp"
+                  alt=""
+                  className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+                   z-50 w-[45vw] max-w-5xl rounded-2xl shadow-2xl "
+                  transition={{
+                    type: "spring",
+                    stiffness: 100,
+                    damping: 20,
+                    
+                  }}
+                />
+              </>
+            )}
+          </AnimatePresence>
+        )}
       </m.div>
     </m.div>
   );

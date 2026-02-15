@@ -25,14 +25,14 @@ export default function Home() {
     });*/
   }, []);
   return (
-    <main className="flex justify-center">
+    <main className=" flex justify-center">
       <video
         src="https://videos.pexels.com/video-files/4057148/4057148-uhd_2732_1440_25fps.mp4"
         autoPlay
         muted
         loop
         playsInline
-        className="fixed  brightness-25 block-background__video--fixed block-background__image"
+        className="fixed  brightness-75 block-background__video--fixed block-background__image"
         poster="https://images.pexels.com/videos/4057148/pexels-photo-4057148.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
       />
       <div className="h-screen"></div>

@@ -1,8 +1,11 @@
-
+import { motion as m } from "framer-motion";
 export default function Footer() {
   return (
-    <div className="w-full  bg-gray-800 text-white py-4  text-center text-xs lg:text-sm flex z-550 justify-around items-center">
-      <div className=" flex-col justify-center items-center ">
+    <div className="w-full  bg-gray-800 text-white py-4  text-center text-xs lg:text-sm flex z-150 justify-around items-center">
+      <div
+   
+        className=" flex-col justify-center items-center "
+      >
         <h3 className="text-blue-300">SANT SADURNÍ D'ANOIA</h3>
         <p>Assesora Mònica</p>
         <a target="_blanck" href="https://maps.app.goo.gl/ueCLphyjmdr5Mpe89">
@@ -20,7 +23,10 @@ export default function Footer() {
           tapissatsanoia@gmail.com
         </a>
       </div>
-      <div className="flex-col justify-center text-center items-center">
+      <div
+      
+        className="flex-col justify-center text-center items-center"
+      >
         <h3 className="text-blue-300">VILAFRANCA DEL PENEDÈS</h3>
         <p>Assessora: Anna</p>
         <a target="_blanck" href="https://maps.app.goo.gl/y4frpEZSFENbCDFZ9">

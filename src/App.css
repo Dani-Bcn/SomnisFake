@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 html{
+ 
   scroll-behavior: smooth;
   background-color: rgb(216, 216, 216);
 }
+
 .logo {
   color: #facc15;
   transition: color 0.3s ease;
