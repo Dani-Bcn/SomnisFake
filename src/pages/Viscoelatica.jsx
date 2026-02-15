@@ -4,23 +4,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function Viscoelatica() {
-  gsap.registerPlugin(ScrollTrigger);
-  let mm = gsap.matchMedia();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    gsap.registerPlugin(ScrollTrigger);
 
-    // REVELAR ELEMENTOS AL HACER SCROLL
-    gsap.utils.toArray(".reveal").forEach((el) => {
-      ScrollTrigger.create({
-        trigger: el,
-        start: "top 20%",
-        onEnter: () => {
-          gsap.fromTo(el, { y: 50 }, { y: 0, duration: 1, ease: "power2.out" });
-        },
-      });
-    });
-  }, []);
 
   return (
     <m.div
@@ -45,8 +29,8 @@ export default function Viscoelatica() {
       </m.h2>
       <div className=" lg:hidden overflow-hidden">
         <m.img
-          initial={{ opacity: 0, scale: 3 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 2 }}
+          animate={{ opacity: 1, scale: 0.5 }}
           transition={{
             opacity: { duration: 1, ease: "easeOut" },
             scale: { duration: 1, ease: "easeOut" },
