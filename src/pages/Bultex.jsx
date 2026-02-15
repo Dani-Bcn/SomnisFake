@@ -1,24 +1,27 @@
 export default function Bultex() {
   return (
-    <div className="lg:h-full bg-gray-500 flex flex-col  px-10 ">
-      <h2 className="lg:mt-60 mt-40 text-6xl lg:text-9xl bebas-neue-regular">
+    <div className="lg:h-full bg-gray-500 flex flex-col   ">
+      <h2 className="lg:mt-60 px-10 mt-40 text-6xl lg:text-9xl bebas-neue-regular">
         Bultex
       </h2>
-      <h3 className="text-4xl lg:text-6xl bebas-neue-regular ">
+      <h3 className=" px-10 text-4xl lg:text-6xl bebas-neue-regular ">
         El material cel·lular més avançat del mercat
       </h3>
-      <img className="py-5" src="/public/logo_bultex.jpg" alt="" />
-      <div className="flex py-10  gap-30">
-        <div className="flex flex-col w-3/10">
+      <img className="  h-33 object-cover"  src="/public/logo_bultex.jpg" alt="" />
+      <div className="lg:flex py-10 justify-center items-center  lg:gap-30">
+        <div className="flex  lg:gap-10 flex-col lg:w-3/10 w-full justify-center items-center">
           <img
+          className=""
             src="https://assets.zyrosite.com/YBgjMgabRgiQr27z/07_bultex-YZ9EEpzEbNUx73re.svg"
             alt=""
           />
           <img
+          className="hidden lg:block"
             src="https://assets.zyrosite.com/YBgjMgabRgiQr27z/04_adaptavilitat-Yan00aoPLoh4xWMn.svg"
             alt=""
           />
-          <img
+          <img 
+          className="hidden lg:block"
             src="https://assets.zyrosite.com/YBgjMgabRgiQr27z/08_bultex_logo-dWxLLVr5o8txNljl.svg"
             alt=""
           />
