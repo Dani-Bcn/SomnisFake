@@ -1,12 +1,12 @@
 import { motion as m } from "framer-motion";
 export default function Footer() {
   return (
-    <div className="w-full  bg-gray-800 text-white py-4  text-center text-xs lg:text-sm flex z-150 justify-around items-center">
+    <div className="w-full  bg-gray-950/50 backdrop-blur-xs text-white py-4  text-center text-xs lg:text-sm flex z-150 justify-around items-center">
       <div
    
         className=" flex-col justify-center items-center "
       >
-        <h3 className="text-blue-300">SANT SADURNÍ D'ANOIA</h3>
+        <h3 className="text-red-500">SANT SADURNÍ D'ANOIA</h3>
         <p>Assesora Mònica</p>
         <a target="_blanck" href="https://maps.app.goo.gl/ueCLphyjmdr5Mpe89">
           C/ Mestre Antoni Torelló. 6
@@ -18,7 +18,7 @@ export default function Footer() {
         <p></p>
         <a
           href="mailto:tapissatsanoia@gmail.com"
-          className="text-blue-400 hover:underline"
+          className="text-red-500 hover:underline"
         >
           tapissatsanoia@gmail.com
         </a>
@@ -27,7 +27,7 @@ export default function Footer() {
       
         className="flex-col justify-center text-center items-center"
       >
-        <h3 className="text-blue-300">VILAFRANCA DEL PENEDÈS</h3>
+        <h3 className="text-red-500">VILAFRANCA DEL PENEDÈS</h3>
         <p>Assessora: Anna</p>
         <a target="_blanck" href="https://maps.app.goo.gl/y4frpEZSFENbCDFZ9">
           Plaça de Josep Anselm Clavé, 12
@@ -39,7 +39,7 @@ export default function Footer() {
         <p></p>
         <a
           href="mailto:somnisvilafranca@gmail.com"
-          className="text-blue-400 hover:underline"
+          className="text-red-500 hover:underline"
         >
           somnisvilafranca@gmail.com
         </a>

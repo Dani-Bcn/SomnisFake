@@ -5,26 +5,21 @@ import { useNavigate } from "react-router-dom";
 const menuItems = [
   "Aniversari",
   "Viscoelastica",
-  "Molles-ensacades", 
-  "Normablock",  
-  "Articulables", 
+  "Molles-ensacades",
+  "Normablock",
+  "Articulables",
   "Juvenil",
-  "Bultex"
-
+  "Bultex",
 ];
 
-export default function NavMenu({inMobile}) {
-
-  console.log(inMobile)
+export default function NavMenu({ inMobile }) {
+  console.log(inMobile);
 
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
   const navigate = useNavigate();
 
-  
-
   useEffect(() => {
-   
     if (open) {
       gsap.to(menuRef.current, {
         x: 0,
@@ -42,34 +37,43 @@ export default function NavMenu({inMobile}) {
 
   return (
     <main className="lg:hidden z-250 bg-[#b64747]">
-   
       <header className="bg-[#df9898] w-10 flex items-center justify-between p-2  shadow-md z-50 rounded-sm">
-     
         <button
-          onClick={() => {setOpen(!open) ,inMobile(open)}}
+          onClick={() => {
+            (setOpen(!open), inMobile(open));
+          }}
           className="flex flex-col gap-1 z-50"
         >
-          <span className={`w-6 h-0.5 bg-black transition ${open && "rotate-45 translate-y-1.5"}`} />
-          <span className={`w-6 h-0.5 bg-black transition ${open && "opacity-0"}`} />
-          <span className={`w-6 h-0.5 bg-black transition ${open && "-rotate-45 -translate-y-1.5"}`} />
+          <span
+            className={`w-6 h-0.5 bg-black transition ${open && "rotate-45 translate-y-1.5"}`}
+          />
+          <span
+            className={`w-6 h-0.5 bg-black transition ${open && "opacity-0"}`}
+          />
+          <span
+            className={`w-6 h-0.5 bg-black transition ${open && "-rotate-45 -translate-y-1.5"}`}
+          />
         </button>
       </header>
 
       {/* Menú */}
       <nav
         ref={menuRef}
-        className=" bg-[#dfaf98] fixed top-0 right-0 w-full md:w-1/3 h-screen  flex flex-col items-center justify-center gap-6 text-xl font-medium translate-x-full z-40"
+        className=" bg-[#c2724d75] backdrop-blur-md mt-30 fixed top-0 right-0 w-full md:w-1/3 h-screen  flex flex-col items-center justify-start gap-6 text-xl font-medium translate-x-full z-40"
       >
-        {menuItems.map((item) => (
-          <p
-            key={item}
-           onClick={() => {navigate(`/${item.toLowerCase()}`), setOpen(false)}}
-            className="hover:text-blue-600 transition"
-          
-          >
-            {item}
-          </p>
-        ))}
+        <div className="mt-20 flex flex-col gap-5 text-center">
+          {menuItems.map((item) => (
+            <p
+              key={item}
+              onClick={() => {
+                (navigate(`/${item.toLowerCase()}`), setOpen(false));
+              }}
+              className="hover:text-blue-600 transition  "
+            >
+              {item}
+            </p>
+          ))}
+        </div>
       </nav>
     </main>
   );
